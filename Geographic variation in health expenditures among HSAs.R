@@ -10,7 +10,7 @@ library(rjson)
 library(foreign)
 
 #Load hospital discharge file
-load("G:/曹裴娅/毕业论文/数据整理/第四季度16至19/2017_zxy/zxy_2017.RData")
+load("G:/曹裴娅/毕业论文/数据整理/第四季度17至19/2017_zxy/zxy_2017.RData")
 load("G:/曹裴娅/毕业论文/数据整理/2018_zxy/第四季度16至19/zxy_2018.RData")
 load("G:/曹裴娅/毕业论文/数据整理/2019_zxy/第四季度16至19/zxy_2019.RData")
 data <- rbind(zxy_2017,zxy_2018,zxy_2019)
@@ -3095,7 +3095,7 @@ msummary(list(fit1),
 summary(fit1)
 confint(fit1)
 
-#Shapley vale decomposition 
+#Shapley value decomposition 
 names(DHSA171819)
 fit <- as.data.frame(DHSA171819[,c(24,11,7,15,9,20:21,8,2,19,4,16:18,14,23)])
 names(fit)
